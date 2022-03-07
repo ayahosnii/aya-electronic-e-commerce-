@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\MainCategories;
+use App\Models\MainCategory;
 use Illuminate\Http\Request;
 
-class MainCategoriesController extends Controller
+class MainCategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,8 @@ class MainCategoriesController extends Controller
      */
     public function index()
     {
-        //
+        return $default_lang = get_default_lang();
+        MainCategory::where('');
     }
 
     /**
