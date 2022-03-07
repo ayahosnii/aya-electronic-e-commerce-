@@ -11,7 +11,7 @@
                                 </li>
                                 <li class="breadcrumb-item"><a href="{{route('admin.languages')}}"> اللغات </a>
                                 </li>
-                                <li class="breadcrumb-item active">إضافة لغة
+                                <li class="breadcrumb-item active">تعديل لغة
                                 </li>
                             </ol>
                         </div>
@@ -41,7 +41,7 @@
                                 @include('admin.includes.alerts.errors')
                                 <div class="card-content collapse show">
                                     <div class="card-body">
-                                        <form class="form" action="{{route('admin.languages.store')}}" method="POST"
+                                        <form class="form" action="{{route('admin.languages.update', $language -> id)}}" method="POST"
                                               enctype="multipart/form-data">
                                             @csrf
                                             <div class="form-body">
@@ -51,8 +51,9 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> اسم اللغة </label>
-                                                            <input type="text" value="" id="name"
+                                                            <input type="text"  id="name"
                                                                    class="form-control"
+                                                                   value = {{$language -> name}}
                                                                    placeholder="ادخل اسم اللغة  "
                                                                    name="name">
                                                             @error('name')
@@ -64,8 +65,9 @@
                                                     <div class="col-md-6">
                                                         <div class="form-group">
                                                             <label for="projectinput1"> اختصار اللغة</label>
-                                                            <input type="text" value="" id="abbr"
+                                                            <input type="text"  id="abbr"
                                                                    class="form-control"
+                                                                   value = {{$language -> abbr}}
                                                                    placeholder="ادخل اختصار اللغة     "
                                                                    name="abbr">
                                                             @error('abbr')
@@ -85,8 +87,8 @@
                                                             <label for="projectinput2"> الاتجاة </label>
                                                             <select name="direction" class="select2 form-control">
                                                                 <optgroup label="من فضلك أختر اتجاه اللغة ">
-                                                                    <option value="rtl">من اليمين الي اليسار</option>
-                                                                    <option value="ltr">من اليسار الي اليمين</option>
+                                                                    <option value="rtl" @if($language -> direction == 'rtl') selected @endif>من اليمين الي اليسار</option>
+                                                                    <option value="ltr" @if($language -> direction == 'ltr') selected @endif>من اليسار الي اليمين</option>
                                                                 </optgroup>
                                                             </select>
                                                             @error('direction')
@@ -103,7 +105,8 @@
                                                             <input type="checkbox" name="active"
                                                                    id="switcheryColor4" value="1"
                                                                    class="switchery" data-color="success"
-                                                                   checked/>
+                                                                   @if($language -> active) checked @endif
+                                                            />
                                                             <label for="switcheryColor4"
                                                                    class="card-title ml-1">الحالة </label>
                                                             @error('active')
@@ -121,7 +124,7 @@
                                                     <i class="ft-x"></i> تراجع
                                                 </button>
                                                 <button type="submit" class="btn btn-primary">
-                                                    <i class="la la-check-square-o"></i> حفظ
+                                                    <i class="la la-check-square-o"></i> تحديث
                                                 </button>
                                             </div>
                                         </form>

@@ -42,7 +42,7 @@ class LoginController extends Controller
     {
         $admin = new App\Models\Admin();
         $admin -> name = "Aya Hosny";
-        $admin -> email = "aya@gamil.com";
+        $admin -> email = "aya@gmail.com";
         $admin -> password = bcrypt("12345678");
         $admin -> save();
     }
