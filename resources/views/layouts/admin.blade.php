@@ -120,6 +120,7 @@
 <script src="http://127.0.0.1:8000/assets/admin/js/scripts/forms/checkbox-radio.js" type="text/javascript"></script>
 
 <script src="http://127.0.0.1:8000/assets/admin/js/scripts/modal/components-modal.js" type="text/javascript"></script>
+<script src="{{asset('http://127.0.0.1:8000/assets/admin/vendors/js/map.js')}}" type="text/javascript"></script>
 
 <script>
     $('#meridians1').timeDropper({
@@ -170,6 +171,7 @@
         meridians: true,setCurrentTime: false
     });
 </script>
+@yield('script')
 
 </body>
 </html>

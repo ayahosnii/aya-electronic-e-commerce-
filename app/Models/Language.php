@@ -29,7 +29,8 @@ class Language extends Model
     }
 
 
-    public function getActive(){
+    public function getActive()
+    {
         return   $this -> active == 1 ? 'مفعل'  : 'غير مفعل';
     }
 

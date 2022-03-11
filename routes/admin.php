@@ -12,7 +12,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-define('PAGINATION_COUNT', 10);
 
 Route::group(['namespace' => 'Admin', 'middleware' => 'auth:admin'], function () {
     Route::get('/', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard');
@@ -32,28 +31,30 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'auth:admin'], function ()
     #################################### End   Language Route #######################################
     #################################### Begin Main Categories Route #######################################
     Route::group(['prefix' => 'main_categories'], function (){
-        Route::get('/', [App\Http\Controllers\MainCategoriesController::class, 'index'])->name('admin.maincategories');
-        Route::get('create', [App\Http\Controllers\MainCategoriesController::class, 'create'])->name('admin.maincategories.create');
-        Route::post('store', [App\Http\Controllers\MainCategoriesController::class, 'store'])->name('admin.maincategories.store');
+        Route::get('/', [\App\Http\Controllers\admin\MainCategoriesController::class, 'index'])->name('admin.maincategories');
+        Route::get('create', [\App\Http\Controllers\admin\MainCategoriesController::class, 'create'])->name('admin.maincategories.create');
+        Route::post('store', [\App\Http\Controllers\admin\MainCategoriesController::class, 'store'])->name('admin.maincategories.store');
 
-        Route::get('edit/{id}', [App\Http\Controllers\MainCategoriesController::class, 'edit'])->name('admin.maincategories.edit');
-        Route::post('update/{id}', [App\Http\Controllers\MainCategoriesController::class, 'update'])->name('admin.maincategories.update');
+        Route::get('edit/{id}', [\App\Http\Controllers\admin\MainCategoriesController::class, 'edit'])->name('admin.maincategories.edit');
+        Route::post('update/{id}', [\App\Http\Controllers\admin\MainCategoriesController::class, 'update'])->name('admin.maincategories.update');
 
 
-        Route::get('delete/{id}', [App\Http\Controllers\MainCategoriesController::class, 'destroy'])->name('admin.maincategories.delete');
+        Route::get('delete/{id}', [\App\Http\Controllers\admin\MainCategoriesController::class, 'destroy'])->name('admin.maincategories.destroy');
+        Route::get('changeStatus/{id}', [\App\Http\Controllers\admin\MainCategoriesController::class, 'changeStatus'])->name('admin.maincategories.status');
     });
     #################################### End   Main Categories Route #######################################
     #################################### Begin Vendors Route #######################################
     Route::group(['prefix' => 'vendors'], function (){
-        Route::get('/', [App\Http\Controllers\MainCategoriesController::class, 'index'])->name('admin.maincategories');
-        Route::get('create', [App\Http\Controllers\MainCategoriesController::class, 'create'])->name('admin.maincategories.create');
-        Route::post('store', [App\Http\Controllers\MainCategoriesController::class, 'store'])->name('admin.maincategories.store');
+        Route::get('/', [\App\Http\Controllers\admin\VendorController::class, 'index'])->name('admin.vendors');
+        Route::get('create', [\App\Http\Controllers\admin\VendorController::class, 'create'])->name('admin.vendors.create');
+        Route::post('store', [\App\Http\Controllers\admin\VendorController::class, 'store'])->name('admin.vendors.store');
 
-        Route::get('edit/{id}', [App\Http\Controllers\MainCategoriesController::class, 'edit'])->name('admin.maincategories.edit');
-        Route::post('update/{id}', [App\Http\Controllers\MainCategoriesController::class, 'update'])->name('admin.maincategories.update');
+        Route::get('edit/{id}', [\App\Http\Controllers\admin\VendorController::class, 'edit'])->name('admin.vendors.edit');
+        Route::post('update/{id}', [\App\Http\Controllers\admin\VendorController::class, 'update'])->name('admin.vendors.update');
 
 
-        Route::get('delete/{id}', [App\Http\Controllers\MainCategoriesController::class, 'destroy'])->name('admin.maincategories.delete');
+        Route::get('delete/{id}', [\App\Http\Controllers\admin\VendorController::class, 'destroy'])->name('admin.vendors.delete');
+        Route::get('changeStatus/{id}', [\App\Http\Controllers\admin\VendorController::class, 'changeStatus'])->name('admin.vendors.status');
     });
     #################################### End   Vendors Route #######################################
 
