@@ -17,6 +17,8 @@ class CreateVendorsTable extends Migration
             $table->string('logo', 150);
             $table->text('address', 150);
             $table->string('email', 150)->nullable();
+            $table->string('latitude', 150)->nullable();
+            $table->string('longitude', 150)->nullable();
             $table->integer('category_id');
             $table->tinyInteger('active')->default(0);
             $table->timestamps();

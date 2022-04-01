@@ -9,7 +9,7 @@
     // pick list containing a mix of places and predicted search terms.
     // This example requires the Places library. Include the libraries=places
     // parameter when you first load the API. For example:
-    // <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc8QIF8r6-AX_fOI0Ywrjotxj5n7ZwXqs&libraries=places">
+    // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
     function initAutocomplete() {
     var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 24.740691, lng: 46.6528521 },
@@ -122,7 +122,7 @@
     // Listen for the event fired when the user selects a prediction and retrieve
     // more details for that place.
     searchBox.addListener('places_changed', function() {
-    var places = searchBox.getPlace();
+    var places = searchBox.getPlaces();
     if (places.length == 0) {
     return;
 }
@@ -181,5 +181,6 @@
     $("#longitude").val(Lng);
 }
 </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCc8QIF8r6-AX_fOI0Ywrjotxj5n7ZwXqs&libraries=places">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKZAuxH9xTzD2DLY2nKSPKrgRi2_y0ejs&libraries=places&callback=initAutocomplete&language=ar&region=EG
+         async defer"></script>
+    @stop

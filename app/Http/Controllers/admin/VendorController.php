@@ -59,6 +59,7 @@ class VendorController extends Controller
             return redirect()->route('admin.vendors')->with(['success' => 'تم الحفظ بنجاح']);
 
         } catch (\Exception $ex) {
+            return $ex;
             return redirect()->route('admin.vendors')->with(['error' => 'حدث خطأ برجاء المحاولة لاحقا']);
         }
     }

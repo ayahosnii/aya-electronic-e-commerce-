@@ -46,7 +46,7 @@ class MainCategoriesController extends Controller
             //1- collect Requests
             $main_categories = collect($request->category);
 
-            //2- return the category which default lang
+            //2- return the category which in default lang
             $filter = $main_categories->filter(function ($value, $key) {
                 return $value['abbr'] == get_default_lang();
             });

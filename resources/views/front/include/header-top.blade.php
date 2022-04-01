@@ -15,14 +15,25 @@
                         <p>Today Deals </p>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 d-flex justify-content-end align-items-center header-top-right">
+                <div class="col-lg-4 col-md-4 d-flex justify-content-end align-items-center header-top-right">
                     <div class="register-out">
                         <i class="zmdi zmdi-account"></i>
-                        <a class="register" href="http://demo.bestprestashoptheme.com/savemart/ar/تسجيل الدخول?create_account=1" data-link-action="display-register-form">
-                            Register
-                        </a>
-                        <span class="or-text">or</span>
-                        <a class="login" href="http://demo.bestprestashoptheme.com/savemart/ar/الحساب الشخصي" rel="nofollow" title="تسجيل الدخول إلى حسابك">Sign in</a>
+                        @if (Route::has('login'))
+                                @auth
+                                    <a class="home" href="{{ url('/home') }}" rel="nofollow">Home</a>
+                                @else
+                                    <a class="register" href="{{ route('register') }}" data-link-action="display-register-form">
+                                        Register
+                                    </a>
+                                    <span class="or-text">or</span>
+
+                                    @if (Route::has('register'))
+                                        <a class="login" href="{{ route('login') }}" rel="nofollow" title="تسجيل الدخول إلى حسابك">Sign in</a>
+                                    @endif
+                                @endauth
+                            </div>
+                        @endif
+
                     </div>
 
                     <!-- begin module:ps_currencyselector/ps_currencyselector.tpl -->

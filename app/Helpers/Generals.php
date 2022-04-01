@@ -21,3 +21,11 @@ function uploadImage($folder, $image)
     return $path;
 }
 
+function uploadImages($folder, $image)
+{
+    $image->store('/', $folder);
+    $filename = $image->hashName();
+    $path =  $folder . '/' . $filename;
+    return $path;
+}
+

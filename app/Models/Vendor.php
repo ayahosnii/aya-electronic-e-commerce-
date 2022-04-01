@@ -11,7 +11,7 @@ class Vendor extends Model
     use Notifiable;
     use HasFactory;
     protected $table = 'vendors';
-    protected $fillable = ['name', 'mobile', 'logo', 'address', 'email', 'password', 'category_id', 'active', 'created_at', 'updated_at'];
+    protected $fillable = ['name', 'mobile', 'logo', 'address', 'email', 'password', 'category_id', 'active', 'latitude', 'longitude', 'created_at', 'updated_at'];
     protected $hidden = ['category_id', 'password'];
     protected function scopeActive($query) {
         $query -> where ('active,1');
@@ -30,7 +30,7 @@ class Vendor extends Model
     }
 
     public function scopeSelection($query){
-        return $query -> select('id', 'name', 'mobile', 'logo', 'address', 'email', 'category_id', 'active');
+        return $query -> select('id', 'name', 'mobile', 'logo', 'address', 'email', 'category_id', 'active', 'latitude', 'longitude');
     }
 
     public function category(){
