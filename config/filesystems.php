@@ -48,6 +48,26 @@ return [
             'url' => env('APP_URL') . '/public',
             'visibility' => 'public',
         ],
+        'vendors' => [
+            'driver' => 'local',
+            'root' => public_path() . '/assets/images/vendors/',
+            'url' => env('APP_URL') . '/public',
+            'visibility' => 'public',
+        ],
+
+    'products' => [
+                'driver' => 'local',
+                'root' => public_path() . '/assets/site/images/products/images/products/',
+                'url' => env('APP_URL') . '/public',
+                'visibility' => 'public',
+            ],
+
+'HomeSlider' => [
+                'driver' => 'local',
+                'root' => public_path() . '/assets/site/images/products/images/products/',
+                'url' => env('APP_URL') . '/public',
+                'visibility' => 'public',
+            ],
 
         's3' => [
             'driver' => 's3',

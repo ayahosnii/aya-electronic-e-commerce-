@@ -53,7 +53,7 @@
                                                             <label for="projectinput1"> اسم اللغة </label>
                                                             <input type="text"  id="name"
                                                                    class="form-control"
-                                                                   value = {{$language -> name}}
+                                                                   value = "{{$language -> name}}"
                                                                    placeholder="ادخل اسم اللغة  "
                                                                    name="name">
                                                             @error('name')
@@ -67,8 +67,8 @@
                                                             <label for="projectinput1"> اختصار اللغة</label>
                                                             <input type="text"  id="abbr"
                                                                    class="form-control"
-                                                                   value = {{$language -> abbr}}
-                                                                   placeholder="ادخل اختصار اللغة     "
+                                                                   value = "{{$language -> abbr}}"
+                                                                   placeholder="ادخل اختصار اللغة"
                                                                    name="abbr">
                                                             @error('abbr')
                                                             <span class="text-danger">{{$message}}</span>

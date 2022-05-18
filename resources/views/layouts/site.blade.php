@@ -1,252 +1,467 @@
-<!-- begin index.tpl -->
-<!doctype html>
-<html lang="ar">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-
-
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/site/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/site/css/animate.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/site/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/site/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/site/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/site/css/flexslider.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/site/css/chosen.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/site/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/site/css/color-01.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/6.0.0-beta2/css/tempus-dominus.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.css')}}">
 
 
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-
-
-    <title>Prestashop_Savemart</title>
-    <meta name="description" content="المتجر مدعوم من طرف بريستاشوب">
-    <meta name="keywords" content="">
-
-
-
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
-
-
-
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/savemart/img/favicon.ico?1531456858">
-    <link rel="shortcut icon" type="image/x-icon" href="/savemart/img/favicon.ico?1531456858">
-
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700,900" rel="stylesheet">
-
-
-
-    <link rel="stylesheet" href="http://demo.bestprestashoptheme.com/savemart/themes/vinova_savemart/assets/cache/theme-4527f124.css" type="text/css" media="all">
-
-
-
-
-
-
-    <script type="text/javascript">
-        var added_to_wishlist = "The product was successfully added to your wishlist.";
-        var isLogged = false;
-        var isLoggedWishlist = false;
-        var loggin_required = "You must be logged in to manage your wishlist.";
-        var prestashop = {"cart":{"products":[],"totals":{"total":{"type":"total","label":"\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a","amount":0,"value":"0.00\u00a0UK\u00a3"},"total_including_tax":{"type":"total","label":"\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a (\u0634\u0627\u0645\u0644 \u0644\u0644\u0636\u0631\u064a\u0628\u0629)","amount":0,"value":"0.00\u00a0UK\u00a3"},"total_excluding_tax":{"type":"total","label":"\u0627\u0644\u0625\u062c\u0645\u0627\u0644\u064a (\u0628\u062f\u0648\u0646 \u0627\u0644\u0636\u0631\u064a\u0628\u0629)","amount":0,"value":"0.00\u00a0UK\u00a3"}},"subtotals":{"products":{"type":"products","label":"\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0637\u0644\u0628","amount":0,"value":"0.00\u00a0UK\u00a3"},"discounts":null,"shipping":{"type":"shipping","label":"\u0627\u0644\u0634\u062d\u0646","amount":0,"value":"\u0645\u062c\u0627\u0646\u0627\u064b"},"tax":null},"products_count":0,"summary_string":"0 \u0645\u0646\u062a\u062c\u0627\u062a","vouchers":{"allowed":0,"added":[]},"discounts":[],"minimalPurchase":0,"minimalPurchaseRequired":""},"currency":{"name":"\u062c\u0646\u064a\u0647 \u0625\u0633\u062a\u0631\u0644\u064a\u0646\u064a","iso_code":"GBP","iso_code_num":"826","sign":"UK\u00a3"},"customer":{"lastname":null,"firstname":null,"email":null,"birthday":null,"newsletter":null,"newsletter_date_add":null,"optin":null,"website":null,"company":null,"siret":null,"ape":null,"is_logged":false,"gender":{"type":null,"name":null},"addresses":[]},"language":{"name":"\u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 (Arabic)","iso_code":"ar","locale":"ar-SA","language_code":"ar-sa","is_rtl":"1","date_format_lite":"Y-m-d","date_format_full":"Y-m-d H:i:s","id":6},"page":{"title":"","canonical":null,"meta":{"title":"Prestashop_Savemart","description":"\u0627\u0644\u0645\u062a\u062c\u0631 \u0645\u062f\u0639\u0648\u0645 \u0645\u0646 \u0637\u0631\u0641 \u0628\u0631\u064a\u0633\u062a\u0627\u0634\u0648\u0628","keywords":"","robots":"index"},"page_name":"index","body_classes":{"lang-ar":true,"lang-rtl":true,"country-GB":true,"currency-GBP":true,"layout-full-width":true,"page-index":true,"tax-display-enabled":true},"admin_notifications":[]},"shop":{"name":"Prestashop_Savemart","logo":"\/savemart\/img\/prestashopsavemart-logo-1531456858.jpg","stores_icon":"\/savemart\/img\/logo_stores.png","favicon":"\/savemart\/img\/favicon.ico"},"urls":{"base_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/","current_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/?home=home_3&SubmitCurrency=1&id_currency=1","shop_domain_url":"http:\/\/demo.bestprestashoptheme.com","img_ps_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/","img_cat_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/c\/","img_lang_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/l\/","img_prod_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/p\/","img_manu_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/m\/","img_sup_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/su\/","img_ship_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/s\/","img_store_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/st\/","img_col_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/co\/","img_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/themes\/vinova_savemart\/assets\/img\/","css_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/themes\/vinova_savemart\/assets\/css\/","js_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/themes\/vinova_savemart\/assets\/js\/","pic_url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/upload\/","pages":{"address":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0627\u0644\u0639\u0646\u0648\u0627\u0646","addresses":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0627\u0644\u0639\u0646\u0627\u0648\u064a\u0646","authentication":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062f\u062e\u0648\u0644","cart":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0639\u0631\u0628\u0629 \u0627\u0644\u062a\u0633\u0648\u0642","category":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/index.php?controller=category","cms":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/index.php?controller=cms","contact":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0627\u062a\u0635\u0644 \u0628\u0646\u0627","discount":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u062e\u0635\u0645","guest_tracking":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u062a\u062a\u0628\u0639 \u0627\u0644\u0637\u0644\u0628","history":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0633\u062c\u0644 \u0637\u0644\u0628\u0627\u062a \u0627\u0644\u0634\u0631\u0627\u0621","identity":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0627\u0644\u0647\u0648\u064a\u0629","index":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/","my_account":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0627\u0644\u062d\u0633\u0627\u0628 \u0627\u0644\u0634\u062e\u0635\u064a","order_confirmation":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u062a\u0623\u0643\u064a\u062f \u0637\u0644\u0628 \u0627\u0644\u0634\u0631\u0627\u0621","order_detail":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/index.php?controller=order-detail","order_follow":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u062a\u062a\u0628\u0639 \u0627\u0644\u0637\u0644\u0628","order":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0637\u0644\u0628 \u0634\u0631\u0627\u0621","order_return":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/index.php?controller=order-return","order_slip":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0627\u064a\u0635\u0627\u0644 \u0627\u0644\u062f\u0641\u0639","pagenotfound":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0635\u0641\u062d\u0629 \u063a\u064a\u0631 \u0645\u0648\u062c\u0648\u062f\u0629","password":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0627\u0633\u062a\u0639\u0627\u062f\u0629 \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631","pdf_invoice":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/index.php?controller=pdf-invoice","pdf_order_return":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/index.php?controller=pdf-order-return","pdf_order_slip":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/index.php?controller=pdf-order-slip","prices_drop":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0627\u0644\u062a\u062e\u0641\u064a\u0636\u0627\u062a","product":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/index.php?controller=product","search":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0628\u062d\u062b","sitemap":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u062e\u0631\u064a\u0637\u0629 \u0627\u0644\u0645\u0648\u0642\u0639","stores":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0645\u062a\u0627\u062c\u0631","supplier":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0627\u0644\u0645\u0648\u0631\u062f","register":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062f\u062e\u0648\u0644?create_account=1","order_login":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0637\u0644\u0628 \u0634\u0631\u0627\u0621?login=1"},"alternative_langs":{"en-us":"http:\/\/demo.bestprestashoptheme.com\/savemart\/en\/?home=home_3&SubmitCurrency=1&id_currency=1","fr-fr":"http:\/\/demo.bestprestashoptheme.com\/savemart\/fr\/?home=home_3&SubmitCurrency=1&id_currency=1","es-es":"http:\/\/demo.bestprestashoptheme.com\/savemart\/es\/?home=home_3&SubmitCurrency=1&id_currency=1","it-it":"http:\/\/demo.bestprestashoptheme.com\/savemart\/it\/?home=home_3&SubmitCurrency=1&id_currency=1","pl-pl":"http:\/\/demo.bestprestashoptheme.com\/savemart\/pl\/?home=home_3&SubmitCurrency=1&id_currency=1","ar-sa":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/?home=home_3&SubmitCurrency=1&id_currency=1"},"theme_assets":"\/savemart\/themes\/vinova_savemart\/assets\/","actions":{"logout":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/?mylogout="},"no_picture_image":{"bySize":{"cart_default":{"url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/p\/ar-default-cart_default.jpg","width":125,"height":125},"small_default":{"url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/p\/ar-default-small_default.jpg","width":150,"height":150},"medium_default":{"url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/p\/ar-default-medium_default.jpg","width":210,"height":210},"home_default":{"url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/p\/ar-default-home_default.jpg","width":600,"height":600},"large_default":{"url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/p\/ar-default-large_default.jpg","width":600,"height":600}},"small":{"url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/p\/ar-default-cart_default.jpg","width":125,"height":125},"medium":{"url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/p\/ar-default-medium_default.jpg","width":210,"height":210},"large":{"url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/img\/p\/ar-default-large_default.jpg","width":600,"height":600},"legend":""}},"configuration":{"display_taxes_label":true,"display_prices_tax_incl":true,"is_catalog":false,"show_prices":true,"opt_in":{"partner":true},"quantity_discount":{"type":"discount","label":"\u062e\u0635\u0645"},"voucher_enabled":0,"return_enabled":0},"field_required":[],"breadcrumb":{"links":[{"title":"\u0627\u0644\u0635\u0641\u062d\u0629 \u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629","url":"http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/"}],"count":1},"link":{"protocol_link":"http:\/\/","protocol_content":"http:\/\/"},"time":1590861359,"static_token":"28add935523ef131c8432825597b9928","token":"cad5fe8236d849a3b4023c4e5ca6a313"};
-        var psr_icon_color = "#F19D76";
-        var search_url = "http:\/\/demo.bestprestashoptheme.com\/savemart\/ar\/\u0628\u062d\u062b";
-    </script>
-
-
-
-
-    <!-- begin modules/novnivoslider/views/templates/hook/header.tpl -->
-
-    <!-- end modules/novnivoslider/views/templates/hook/header.tpl -->
-
-    <!-- begin modules/novblockwishlist/novblockwishlist_top.tpl -->
-
-    <script type="text/javascript">
-        var baseDir = "/savemart/";
-        var static_token = "28add935523ef131c8432825597b9928";
-    </script>
-
-
-    <!-- end modules/novblockwishlist/novblockwishlist_top.tpl -->
-
-
-    <style type="text/css">
-        #main-site {background-color: #ffffff;}@media (min-width: 1200px) {.container {width: 1200px;}#header .container {width: 1200px;}.footer .container {width: 1200px;}#index .container {width: 1200px;}}#popup-subscribe .modal-dialog .modal-content {background-image: url(/savemart/modules/novthemeconfig/images/newsletter_bg-1.png);}
-    </style>
-
+    @livewireStyles
 </head>
-<body id="index" class="lang-ar lang-rtl country-gb currency-gbp layout-full-width page-index tax-display-enabled">
+<body class="home-page home-01 ">
 
+<!-- mobile menu -->
+<div class="mercado-clone-wrap">
+    <div class="mercado-panels-actions-wrap">
+        <a class="mercado-close-btn mercado-close-panels" href="#">x</a>
+    </div>
+    <div class="mercado-panels"></div>
+</div>
 
-
-<main id="main-site" class="displayhomenovthree">
-
-    <header id="header" class="header-3 sticky-menu">
-@include('front.include.header-mobile')
-@include('front.include.header-top')
-@include('front.include.header-center')
-@include('front.include.header-bottom')
-    </header>
-
-
-    <div id="header-sticky">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="d-flex align-items-center col-xl-3 col-md-3">
-                    <div class="contentstickynew_verticalmenu"></div>
-                    <div class="contentstickynew_logo"></div>
+<!--header-->
+<header id="header" class="header header-style-1">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="topbar-menu-area">
+                <div class="container">
+                    <div class="topbar-menu left-menu">
+                        <ul>
+                            <li class="menu-item" >
+                                <a title="Hotline: (+123) 456 789" href="#" ><span class="icon label-before fa fa-mobile"></span>Hotline: (+123) 456 789</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="topbar-menu right-menu">
+                        <ul>
+                            <li class="menu-item lang-menu menu-item-has-children parent">
+                                <a title="English" href="#"><span class="img label-before"><img src="{{asset('assets/site/images/lang-en.png')}}" alt="lang-en"></span>English<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="submenu lang" >
+                                    <li class="menu-item" ><a title="ar" href="#"><span class="img label-before"><img src="{{asset('assets/site/images/lang-hun.png')}}" alt="lang-hun"></span>Arabic</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children parent" >
+                                <a title="Dollar (USD)" href="#">Dollar (USD)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="submenu curency" >
+                                    <li class="menu-item" >
+                                        <a title="Pound (GBP)" href="#">Pound (GBP)</a>
+                                    </li>
+                                    <li class="menu-item" >
+                                        <a title="Euro (EUR)" href="#">Euro (EUR)</a>
+                                    </li>
+                                    <li class="menu-item" >
+                                        <a title="Dollar (USD)" href="#">Dollar (USD)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            @if(Route::has("login"))
+                                @auth
+                                    @if(Auth::user()->utype === 'ADM')
+                                        <li class="menu-item menu-item-has-children parent" >
+                                            <a title="My Account" href="#">My Account {{Auth::user() -> name}}<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="submenu curency" >
+                                                <li class="menu-item" >
+                                                    <a title="Dashboard" href="{{route('get.admin.login')}}">Login Dashboard</a>
+                                                </li>
+                                                <li class="menu-item" >
+                                                    <a title="Categories" href="{{route('admin.maincategories')}}">Categories</a>
+                                                </li>
+                                                <li class="menu-item" >
+                                                    <a title="Categories" href="{{route('admin.homeslider')}}">Manage Home Slider</a>
+                                                </li>
+                                                <li class="menu-item" >
+                                                    <a title="Logout" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
+                                                </li>
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                                    @csrf
+                                                </form>
+                                            </ul>
+                                        </li>
+                                    @else
+                                        <li class="menu-item menu-item-has-children parent" >
+                                            <a title="My Account" href="#">My Account {{Auth::user() -> name}}<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="submenu curency" >
+                                                <li class="menu-item" >
+                                                    <a title="Dashboard" href="{{route('user.dashboard')}}">Dashboard</a>
+                                                </li>
+                                                <form method="POST" action="{{route('admin.dashboard')}}">
+                                                    @csrf
+                                                </form>
+                                                    <li class="menu-item" >
+                                                        <a title="Logout" href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a>
+                                                    </li>
+                                                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                                        @csrf
+                                                    </form>
+                                            </ul>
+                                        </li>
+                                    @endif
+                                @else
+                                    <li class="menu-item" ><a title="Register or Login" href="{{route('login')}}">Login</a></li>
+                                    <li class="menu-item" ><a title="Register or Login" href="{{Route('register')}}">Register</a></li>
+                                @endif
+                            @endif
+                        </ul>
+                    </div>
                 </div>
-                <div class="contentstickynew_search col-xl-7 col-md-6"></div>
-                <div class="contentstickynew_group d-flex justify-content-end col-xl-2 col-md-3"></div>
             </div>
-        </div>
-    </div>
 
+            <div class="container">
+                <div class="mid-section main-info-area">
 
+                    <div class="wrap-logo-top left-section">
+                        <a href="index.html" class="link-to-home"><img src="{{asset('assets/site/images/logo-top-1.png')}}" alt="mercado"></a>
+                    </div>
 
+                    @livewire("header-seaech-component")
 
-    <aside id="notifications">
-        <div class="container">
-
-
-
-        </div>
-    </aside>
-
-
-    <div id="wrapper-site">
-
-
-
-        <div id="content-wrapper" class="full-width">
-            @yield('content')
-
-
-        </div>
-
-
-
-    </div>
-
-
-    @include('front.include.footer')
-    <div class="canvas-overlay"></div>
-    <div id="back-top">
-  <span>
-    <i class="fa fa-long-arrow-up"></i>  </span>
-    </div>
-</main>
-
-<div id="mobile_top_menu_wrapper" class="hidden-md-up">
-    <div class="content">
-        <div id="_mobile_verticalmenu"></div>
-    </div>
-</div>
-
-
-<div id="mobile-pagemenu" class="mobile-boxpage d-flex hidden-md-up">
-    <div class="content-boxpage col">
-        <div class="box-header d-flex justify-content-between align-items-center">
-            <div class="title-box">Menu</div>
-            <div class="close-box">Close</div>
-        </div>
-        <div class="box-content">
-            <div id="_mobile_top_menu" class="js-top-menu"></div>
-        </div>
-    </div>
-</div>
-<div id="mobile-blockcart" class="mobile-boxpage d-flex hidden-md-up">
-    <div class="content-boxpage col">
-        <div class="box-header d-flex justify-content-between align-items-center">
-            <div class="title-box">Cart</div>
-            <div class="close-box">Close</div>
-        </div>
-        <div id="_mobile_cart" class="box-content"></div>
-    </div>
-</div>
-<div id="mobile-pageaccount" class="mobile-boxpage d-flex hidden-md-up" data-titlebox-parent="Account">
-    <div class="content-boxpage col">
-        <div class="box-header d-flex justify-content-between align-items-center">
-            <div class="back-box">Back</div>
-            <div class="title-box">Account</div>
-            <div class="close-box">Close</div>
-        </div>
-        <div class="box-content d-flex justify-content-center align-items-center text-center">
-            <div>
-                <div id="_mobile_account_list">
-                    <div class="account-list-content">
-                        <div>
-                            <a class="login" href="http://demo.bestprestashoptheme.com/savemart/ar/الحساب الشخصي" rel="nofollow" title="Log in to your customer account"><i class="fa fa-sign-in"></i>Sign in</a>
-                        </div>
-                        <div>
-                            <a class="register" href="http://demo.bestprestashoptheme.com/savemart/ar/الحساب الشخصي" rel="nofollow" title="Register Account"><i class="fa fa-user"></i>Register Account</a>
-                        </div>
-                        <div>
-                            <a class="check-out" href="http://demo.bestprestashoptheme.com/savemart/ar/طلب شراء" rel="nofollow" title="Checkout"><i class="material-icons">check_circle</i>Checkout</a>
-                        </div>
-                        <div class="link_wishlist">
-                            <a href="http://demo.bestprestashoptheme.com/savemart/ar/module/novblockwishlist/mywishlist" title="My Wishlists">
-                                <i class="fa fa-heart"></i>My Wishlists
+                    <div class="wrap-icon right-section">
+                        @livewire('wish-list-count-component')
+                        @livewire('cart-count-component')
+                        <div class="wrap-icon-section show-up-after-1024">
+                            <a href="#" class="mobile-navigation">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="links-currency" data-target="#box-currency" data-titlebox="Currency"><span>Currency</span><i class="zmdi zmdi-arrow-right"></i></div>
-                <div class="links-language" data-target="#box-language" data-titlebox="Language"><span>Language</span><i class="zmdi zmdi-arrow-right"></i></div>
-            </div>
-        </div>
-        <div id="box-currency" class="box-content d-flex">
-            <div class="w-100">
-                <div class="item-currency current">
-                    <a title="جنيه إسترليني" rel="nofollow" href="http://demo.bestprestashoptheme.com/savemart/ar/?home=home_3&amp;SubmitCurrency=1&amp;id_currency=1">جنيه إسترليني: GBP</a>
-                </div>
-                <div class="item-currency">
-                    <a title="دولار أمريكي" rel="nofollow" href="http://demo.bestprestashoptheme.com/savemart/ar/?home=home_3&amp;SubmitCurrency=1&amp;id_currency=2">دولار أمريكي: USD</a>
-                </div>
-            </div>
-        </div>
 
-        <div id="box-language" class="box-content d-flex">
-            <div class="w-100">
-                <div class="item-language">
-                    <a href="http://demo.bestprestashoptheme.com/savemart/en/?home=home_3&SubmitCurrency=1&id_currency=1" class="d-flex align-items-center"><img class="img-fluid mr-2" src="/savemart/img/l/1.jpg" alt="English (English)" width="16" height="11" /><span>English</span></a>
                 </div>
-                <div class="item-language">
-                    <a href="http://demo.bestprestashoptheme.com/savemart/fr/?home=home_3&SubmitCurrency=1&id_currency=1" class="d-flex align-items-center"><img class="img-fluid mr-2" src="/savemart/img/l/2.jpg" alt="Français (French)" width="16" height="11" /><span>Français</span></a>
+            </div>
+
+            <div class="nav-section header-sticky">
+                <div class="header-nav-section">
+                    <div class="container">
+                        <ul class="nav menu-nav clone-main-menu" id="mercado_haead_menu" data-menuname="Sale Info" >
+                            <li class="menu-item"><a href="#" class="link-term">Weekly Featured</a><span class="nav-label hot-label">hot</span></li>
+                            <li class="menu-item"><a href="#" class="link-term">Hot Sale items</a><span class="nav-label hot-label">hot</span></li>
+                            <li class="menu-item"><a href="#" class="link-term">Top new items</a><span class="nav-label hot-label">hot</span></li>
+                            <li class="menu-item"><a href="#" class="link-term">Top Selling</a><span class="nav-label hot-label">hot</span></li>
+                            <li class="menu-item"><a href="#" class="link-term">Top rated items</a><span class="nav-label hot-label">hot</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="item-language">
-                    <a href="http://demo.bestprestashoptheme.com/savemart/es/?home=home_3&SubmitCurrency=1&id_currency=1" class="d-flex align-items-center"><img class="img-fluid mr-2" src="/savemart/img/l/3.jpg" alt="Español (Spanish)" width="16" height="11" /><span>Español</span></a>
-                </div>
-                <div class="item-language">
-                    <a href="http://demo.bestprestashoptheme.com/savemart/it/?home=home_3&SubmitCurrency=1&id_currency=1" class="d-flex align-items-center"><img class="img-fluid mr-2" src="/savemart/img/l/4.jpg" alt="Italiano (Italian)" width="16" height="11" /><span>Italiano</span></a>
-                </div>
-                <div class="item-language">
-                    <a href="http://demo.bestprestashoptheme.com/savemart/pl/?home=home_3&SubmitCurrency=1&id_currency=1" class="d-flex align-items-center"><img class="img-fluid mr-2" src="/savemart/img/l/5.jpg" alt="Polski (Polish)" width="16" height="11" /><span>Polski</span></a>
-                </div>
-                <div class="item-language current">
-                    <a href="http://demo.bestprestashoptheme.com/savemart/ar/?home=home_3&SubmitCurrency=1&id_currency=1" class="d-flex align-items-center"><img class="img-fluid mr-2" src="/savemart/img/l/6.jpg" alt="اللغة العربية (Arabic)" width="16" height="11" /><span>اللغة العربية</span></a>
+
+                <div class="primary-nav-section">
+                    <div class="container">
+                        <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
+                            <li class="menu-item home-icon">
+                                <a href="{{route('index')}}" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="about-us.html" class="link-term mercado-item-title">About Us</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/shop" class="link-term mercado-item-title">Shop</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/cart" class="link-term mercado-item-title">Cart</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="/checkout" class="link-term mercado-item-title">Checkout</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contact-us.html" class="link-term mercado-item-title">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-</div>
+</header>
+
+{{$slot}}
+
+<footer id="footer">
+    <div class="wrap-footer-content footer-style-1">
+
+        <div class="wrap-function-info">
+            <div class="container">
+                <ul>
+                    <li class="fc-info-item">
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                        <div class="wrap-left-info">
+                            <h4 class="fc-name">Free Shipping</h4>
+                            <p class="fc-desc">Free On Oder Over $99</p>
+                        </div>
+
+                    </li>
+                    <li class="fc-info-item">
+                        <i class="fa fa-recycle" aria-hidden="true"></i>
+                        <div class="wrap-left-info">
+                            <h4 class="fc-name">Guarantee</h4>
+                            <p class="fc-desc">30 Days Money Back</p>
+                        </div>
+
+                    </li>
+                    <li class="fc-info-item">
+                        <i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                        <div class="wrap-left-info">
+                            <h4 class="fc-name">Safe Payment</h4>
+                            <p class="fc-desc">Safe your online payment</p>
+                        </div>
+
+                    </li>
+                    <li class="fc-info-item">
+                        <i class="fa fa-life-ring" aria-hidden="true"></i>
+                        <div class="wrap-left-info">
+                            <h4 class="fc-name">Online Suport</h4>
+                            <p class="fc-desc">We Have Support 24/7</p>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--End function info-->
+
+        <div class="main-footer-content">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                        <div class="wrap-footer-item">
+                            <h3 class="item-header">Contact Details</h3>
+                            <div class="item-content">
+                                <div class="wrap-contact-detail">
+                                    <ul>
+                                        <li>
+                                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                            <p class="contact-txt">45 Grand Central Terminal New York,NY 1017 United State USA</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-phone" aria-hidden="true"></i>
+                                            <p class="contact-txt">(+123) 456 789 - (+123) 666 888</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            <p class="contact-txt">Contact@yourcompany.com</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+
+                        <div class="wrap-footer-item">
+                            <h3 class="item-header">Hot Line</h3>
+                            <div class="item-content">
+                                <div class="wrap-hotline-footer">
+                                    <span class="desc">Call Us toll Free</span>
+                                    <b class="phone-number">(+123) 456 789 - (+123) 666 888</b>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap-footer-item footer-item-second">
+                            <h3 class="item-header">Sign up for newsletter</h3>
+                            <div class="item-content">
+                                <div class="wrap-newletter-footer">
+                                    <form action="#" class="frm-newletter" id="frm-newletter">
+                                        <input type="email" class="input-email" name="email" value="" placeholder="Enter your email address">
+                                        <button class="btn-submit">Subscribe</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12 box-twin-content ">
+                        <div class="row">
+                            <div class="wrap-footer-item twin-item">
+                                <h3 class="item-header">My Account</h3>
+                                <div class="item-content">
+                                    <div class="wrap-vertical-nav">
+                                        <ul>
+                                            <li class="menu-item"><a href="#" class="link-term">My Account</a></li>
+                                            <li class="menu-item"><a href="#" class="link-term">Brands</a></li>
+                                            <li class="menu-item"><a href="#" class="link-term">Gift Certificates</a></li>
+                                            <li class="menu-item"><a href="#" class="link-term">Affiliates</a></li>
+                                            <li class="menu-item"><a href="#" class="link-term">Wish list</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrap-footer-item twin-item">
+                                <h3 class="item-header">Infomation</h3>
+                                <div class="item-content">
+                                    <div class="wrap-vertical-nav">
+                                        <ul>
+                                            <li class="menu-item"><a href="#" class="link-term">Contact Us</a></li>
+                                            <li class="menu-item"><a href="#" class="link-term">Returns</a></li>
+                                            <li class="menu-item"><a href="#" class="link-term">Site Map</a></li>
+                                            <li class="menu-item"><a href="#" class="link-term">Specials</a></li>
+                                            <li class="menu-item"><a href="#" class="link-term">Order History</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                        <div class="wrap-footer-item">
+                            <h3 class="item-header">We Using Safe Payments:</h3>
+                            <div class="item-content">
+                                <div class="wrap-list-item wrap-gallery">
+                                    <img src="assets/site/images/payment.png" style="max-width: 260px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                        <div class="wrap-footer-item">
+                            <h3 class="item-header">Social network</h3>
+                            <div class="item-content">
+                                <div class="wrap-list-item social-network">
+                                    <ul>
+                                        <li><a href="#" class="link-to-item" title="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" class="link-to-item" title="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" class="link-to-item" title="pinterest"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" class="link-to-item" title="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" class="link-to-item" title="vimeo"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                        <div class="wrap-footer-item">
+                            <h3 class="item-header">Dowload App</h3>
+                            <div class="item-content">
+                                <div class="wrap-list-item apps-list">
+                                    <ul>
+                                        <li><a href="#" class="link-to-item" title="our application on apple store"><figure><img src="assets/site/images/brands/apple-store.png" alt="apple store" width="128" height="36"></figure></a></li>
+                                        <li><a href="#" class="link-to-item" title="our application on google play store"><figure><img src="assets/site/images/brands/google-play-store.png" alt="google play store" width="128" height="36"></figure></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="wrap-back-link">
+                <div class="container">
+                    <div class="back-link-box">
+                        <h3 class="backlink-title">Quick Links</h3>
+                        <div class="back-link-row">
+                            <ul class="list-back-link" >
+                                <li><span class="row-title">Mobiles:</span></li>
+                                <li><a href="#" class="redirect-back-link" title="mobile">Mobiles</a></li>
+                                <li><a href="#" class="redirect-back-link" title="yphones">YPhones</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Gianee Mobiles GL">Gianee Mobiles GL</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Mobiles Karbonn">Mobiles Karbonn</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Mobiles Viva">Mobiles Viva</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Mobiles Intex">Mobiles Intex</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Mobiles Micrumex">Mobiles Micrumex</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Mobiles Bsus">Mobiles Bsus</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Mobiles Samsyng">Mobiles Samsyng</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Mobiles Lenova">Mobiles Lenova</a></li>
+                            </ul>
+
+                            <ul class="list-back-link" >
+                                <li><span class="row-title">Tablets:</span></li>
+                                <li><a href="#" class="redirect-back-link" title="Plesc YPads">Plesc YPads</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Samsyng Tablets" >Samsyng Tablets</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Qindows Tablets" >Qindows Tablets</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Calling Tablets" >Calling Tablets</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Micrumex Tablets" >Micrumex Tablets</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Lenova Tablets Bsus" >Lenova Tablets Bsus</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Tablets iBall" >Tablets iBall</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Tablets Swipe" >Tablets Swipe</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Tablets TVs, Audio" >Tablets TVs, Audio</a></li>
+                            </ul>
+
+                            <ul class="list-back-link" >
+                                <li><span class="row-title">Fashion:</span></li>
+                                <li><a href="#" class="redirect-back-link" title="Sarees Silk" >Sarees Silk</a></li>
+                                <li><a href="#" class="redirect-back-link" title="sarees Salwar" >sarees Salwar</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Suits Lehengas" >Suits Lehengas</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Biba Jewellery" >Biba Jewellery</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Rings Earrings" >Rings Earrings</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Diamond Rings" >Diamond Rings</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Loose Diamond Shoes" >Loose Diamond Shoes</a></li>
+                                <li><a href="#" class="redirect-back-link" title="BootsMen Watches" >BootsMen Watches</a></li>
+                                <li><a href="#" class="redirect-back-link" title="Women Watches" >Women Watches</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="coppy-right-box">
+            <div class="container">
+                <div class="coppy-right-item item-left">
+                    <p class="coppy-right-text">Copyright © 2020 Surfside Media. All rights reserved</p>
+                </div>
+                <div class="coppy-right-item item-right">
+                    <div class="wrap-nav horizontal-nav">
+                        <ul>
+                            <li class="menu-item"><a href="about-us.html" class="link-term">About us</a></li>
+                            <li class="menu-item"><a href="privacy-policy.html" class="link-term">Privacy Policy</a></li>
+                            <li class="menu-item"><a href="terms-conditions.html" class="link-term">Terms & Conditions</a></li>
+                            <li class="menu-item"><a href="return-policy.html" class="link-term">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="{{ asset('assets/site/js/jquery-1.12.4.minb8ff.js?ver=1.12.4') }}"></script>
+<script src="{{ asset('assets/site/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4') }}"></script>
+{{--<script src="{{ asset('assets/site/js/bootstrap.min.js') }}"></script>--}}
 
 
-<div id="stickymenu_bottom_mobile" class="d-flex align-items-center justify-content-center hidden-md-up text-center">
-    <div class="stickymenu-item"><a href="http://demo.bestprestashoptheme.com/savemart/"><i class="zmdi zmdi-home"></i><span>Home</span></a></div>
-    <div class="stickymenu-item"><a href="#" class="js-btn-search"><i class="zmdi zmdi-search"></i><span>Search</span></a></div>
-    <div class="stickymenu-item"><div id="_mobile_cart_bottom" class="nov-toggle-page" data-target="#mobile-blockcart"></div></div>
-    <div class="stickymenu-item"><a href="http://demo.bestprestashoptheme.com/savemart/ar/module/novblockwishlist/mywishlist"><i class="zmdi zmdi-favorite-outline"></i><span>Wishlist</span></a></div>
-    <div class="stickymenu-item"><a href="#" class="nov-toggle-page" data-target="#mobile-pageaccount"><i class="zmdi zmdi-account-o"></i><span>Account</span></a></div>
-</div>
-
-
-
-<script type="text/javascript" src="http://demo.bestprestashoptheme.com/savemart/themes/vinova_savemart/assets/cache/bottom-3c96ed23.js" ></script>
-
-
-
-
-
-
-
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="{{ asset('assets/site/js/jquery.flexslider.js') }}"></script>
+{{--<script src="{{ asset('assets/site/js/chosen.jquery.min.js') }}"></script>--}}
+<script src="{{ asset('assets/site/js/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('assets/site/js/jquery.countdown.min.js') }}"></script>
+<script src="{{ asset('assets/site/js/jquery.sticky.js') }}"></script>
+<script src="{{ asset('assets/site/js/functions.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/6.0.0-beta2/js/tempus-dominus.min.js" integrity="sha512-Ij5chpS6/QXqecAuueuhH7afEMmbe0Fmu9zWl/y//kn6iISdVvQ63Ra7PCp3avCU+/+4OBWapk+VJsldye25rg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+{{--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js" integrity="sha512-GDey37RZAxFkpFeJorEUwNoIbkTwsyC736KNSYucu1WJWFK9qTdzYub8ATxktr6Dwke7nbFaioypzbDOQykoRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+--}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.1/nouislider.min.js" integrity="sha512-T5Bneq9hePRO8JR0S/0lQ7gdW+ceLThvC80UjwkMRz+8q+4DARVZ4dqKoyENC7FcYresjfJ6ubaOgIE35irf4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.tiny.cloud/1/2hiuvs7pfrjea2zdpl7ldavojp466ihbpx4p57jxkzrr6osc/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+@livewireScripts
+@stack('scripts')
 
 </body>
 </html>
-<!-- end index.tpl -->

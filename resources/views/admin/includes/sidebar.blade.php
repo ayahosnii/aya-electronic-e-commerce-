@@ -26,7 +26,7 @@
             <li class="nav-item"><a href=""><i class="la la-group"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">الاقسام الرئيسية </span>
                     <span
-                        class="badge badge badge-danger badge-pill float-right mr-2">{{App\Models\MainCategory::active()->count()}}</span>
+                        class="badge badge badge-danger badge-pill float-right mr-2">{{App\Models\MainCategory::defaultcategory()->count()}}</span>
                 </a>
                 <ul class="menu-content">
                     <li class="inactive"><a class="menu-item" href="{{route('admin.maincategories')}}"
@@ -38,16 +38,31 @@
                 </ul>
             </li>
 
+        <li class="nav-item"><a href=""><i class="la la-group"></i>
+                    <span class="menu-title" data-i18n="nav.dash.main">الاقسام الفرعية </span>
+                    <span
+                        class="badge badge badge-danger badge-pill float-right mr-2">{{--App\Models\SubCategory::active()->count()--}}0</span>
+                </a>
+                <ul class="menu-content">
+                    <li class="inactive"><a class="menu-item" href="{{route('admin.subcategories')}}"
+                                          data-i18n="nav.dash.ecommerce"> عرض الكل </a>
+                    </li>
+                    <li><a class="menu-item" href="{{route('admin.subcategories.create')}}" data-i18n="nav.dash.crypto">أضافة
+                            قسم فرعي جديد </a>
+                    </li>
+                </ul>
+            </li>
+
             <li class="nav-item"><a href=""><i class="la la-male"></i>
                     <span class="menu-title" data-i18n="nav.dash.main">المتاحر  </span>
                     <span
-                        class="badge badge badge-success badge-pill float-right mr-2"></span>
+                        class="badge badge badge-success badge-pill float-right mr-2">{{App\Models\Vendor::count()}}</span>
                 </a>
                 <ul class="menu-content">
-                    <li class="inactive"><a class="menu-item" href=""
+                    <li class="inactive"><a class="menu-item" href="{{route('admin.vendors')}}"
                                           data-i18n="nav.dash.ecommerce"> عرض الكل </a>
                     </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
+                    <li><a class="menu-item" href="{{route('admin.vendors.create')}}" data-i18n="nav.dash.crypto">أضافة
                             متجر جديد </a>
                     </li>
                 </ul>
@@ -55,16 +70,16 @@
 
 
             <li class="nav-item"><a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">الطلاب  </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">المنتجات  </span>
                     <span
-                        class="badge badge badge-warning  badge-pill float-right mr-2"></span>
+                        class="badge badge badge-warning  badge-pill float-right mr-2">{{App\Models\Product::count()}}</span>
                 </a>
                 <ul class="menu-content">
-                    <li class="inactive"><a class="menu-item" href=""
+                    <li class="inactive"><a class="menu-item" href="{{route('admin.products')}}"
                                           data-i18n="nav.dash.ecommerce"> عرض الكل </a>
                     </li>
-                    <li><a class="menu-item" href="" data-i18n="nav.dash.crypto">أضافة
-                            طالب </a>
+                    <li><a class="menu-item" href="{{route('admin.products.create')}}" data-i18n="nav.dash.crypto">أضافة
+                            منتج </a>
                     </li>
                 </ul>
             </li>
@@ -72,13 +87,47 @@
 
             <li class="nav-item">
                 <a href=""><i class="la la-male"></i>
-                    <span class="menu-title" data-i18n="nav.dash.main">تذاكر المراسلات   </span>
+                    <span class="menu-title" data-i18n="nav.dash.main">أعدادات  الشرائح   </span>
                     <span
-                        class="badge badge badge-danger  badge-pill float-right mr-2">0</span>
+                        class="badge badge badge-danger  badge-pill float-right mr-2">{{\App\Models\HomeSlider::count()}}</span>
                 </a>
                 <ul class="menu-content">
-                    <li class="inactive"><a class="menu-item" href=""
-                                          data-i18n="nav.dash.ecommerce"> تذاكر الطلاب </a>
+                    <li class="inactive"><a class="menu-item" href="{{route('admin.homeslider')}}"
+                                          data-i18n="nav.dash.ecommerce"> عرض الشرائح </a>
+                    </li>
+                    <li class="inactive"><a class="menu-item" href="{{route('admin.homeslider.create')}}"
+                                            data-i18n="nav.dash.ecommerce"> أنشاء شريحة جديدة </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item">
+                <a href=""><i class="la la-male"></i>
+                    <span class="menu-title" data-i18n="nav.dash.main">أعدادات أقسام الصفحة الرئيسية   </span>
+                    <span
+                        class="badge badge badge-danger  badge-pill float-right mr-2">{{\App\Models\HomeCategory::count()}}</span>
+                </a>
+                <ul class="menu-content">
+                    <li class="inactive"><a class="menu-item" href="{{route('admin.homeslider')}}"
+                                            data-i18n="home-categories.create"> أنشاء قسم للصفحة الرئيسية </a>
+                    </li>
+                    <li class="inactive"><a class="menu-item" href="{{route('admin.homeslider.create')}}"
+                                            data-i18n="nav.dash.ecommerce"> أنشاء شريحة جديدة </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href=""><i class="la la-male"></i>
+                    <span class="menu-title" data-i18n="nav.dash.main">الكوبونات   </span>
+                    <span
+                        class="badge badge badge-danger  badge-pill float-right mr-2">{{\App\Models\Coupon::count()}}</span>
+                </a>
+                <ul class="menu-content">
+                    <li class="inactive"><a class="menu-item" href="{{route('admin.coupon')}}"
+                                            data-i18n="nav.dash.ecommerce"> عرض الكوبونات </a>
+                    </li>
+                    <li class="inactive"><a class="menu-item" href="{{route('admin.coupon.create')}}"
+                                            data-i18n="nav.dash.ecommerce"> أنشاء كوبون جديدة </a>
                     </li>
                 </ul>
             </li>
